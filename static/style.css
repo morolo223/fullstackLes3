@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    height: 10vh;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    margin: auto auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid black 1px;
+    width: fit-content;
+    height:fit-content;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.modalContent{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addProductForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.closeButton{
+    align-self: end;
+}
+
+.card{
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
